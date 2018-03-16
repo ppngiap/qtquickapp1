@@ -1,0 +1,42 @@
+<colormap>
+	<color txt="Background" id="background-clr" />
+	<color txt="Water" id="water_color-clr" />
+	<color txt="Parks" id="park_color-clr" />
+	<color txt="Airport" id="airport_color-clr" />
+	<color txt="Runway" id="runway_color-clr" />
+	<color txt="Shopping center" id="shopping_center_color-clr" />
+	<color txt="University" id="university_campus_color-clr" />
+	<color txt="Hospitals" id="hospital_campus_color-clr" />
+	<color txt="Sports complex" id="sports_campus_color-clr" />
+	<color txt="Reservation" id="reservation_color-clr" />
+	<color txt="Military" id="military_color-clr" />
+
+	<color txt="Local roads" id="road_regional_color-clr" />
+	<!--
+	<color id="road_local-clr" />
+	<color id="road_notdrivable-clr" />
+	<color id="road_normal-clr" />
+	<color id="road_regional_color_tunnel-clr" />
+	<color id="road_tunnel-clr" />
+	<color id="road_walkway_tunnel-clr" />
+	<color id="road_notdrivable_tunnel-clr" />
+	<color id="road_normal_tunnel-clr" />
+	-->
+	<color txt="Local road outline" id="road_regional_outline_color-clr" />
+	<!--
+	<color id="road_local_outline-clr" />
+	<color id="road_normal_outline-clr" />
+	-->
+
+	<color txt="Ferry lines" id="road_ferry-clr" />
+	<color txt="Country border" id="country_border_color-clr" />
+	<color txt="State border" id="state_border_color-clr" />
+	<color txt="Major road" id="road_limited_access-clr" />
+	<!--
+	<color id="road_ramp-clr" />
+	<color id="toll_color_tunnel-clr" />
+	<color id="road_limited_access_tunnel-clr" />
+	<color id="road_ramp_tunnel-clr" />
+	-->
+	<color txt="Major road outline" id="road_limited_access_outline-clr" />
+</colormap>
