@@ -69,6 +69,7 @@ ApplicationWindow {
             clip: true
             delegate: ListItem {
                 text: model.name
+                boxColor: model.rgb
                 width: ListView.view.width
             }
         }
