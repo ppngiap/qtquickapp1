@@ -1,22 +1,22 @@
-#include "materialmap.h"
+#include "colormap.h"
 #include <QFile>
 #include <QDebug>
 #include <QTextStream>
 #include <QtGlobal>
 
-MaterialMap::MaterialMap()
+ColorMap::ColorMap()
 {
 
 }
 
-bool MaterialMap::read(const QString& fileName)
+bool ColorMap::read(const QString& fileName)
 {
     if (fileName.isEmpty())
         return false;
 
     QFile file(fileName);
     if (!file.open(QFile::ReadOnly | QFile::Text)) {
-        qWarning() << "MaterialMap::read" << " Failed to read file "
+        qWarning() << "ColorMap::read" << " Failed to read file "
                    << fileName << ".  Got error: " << file.errorString();
         return false;
     }
@@ -26,7 +26,7 @@ bool MaterialMap::read(const QString& fileName)
     int errorColumn;
 
     if (!mDocument.setContent(&file, true, &errorStr, &errorLine, &errorColumn)) {
-        qWarning() << "MaterialMap read: " <<  QString("Parse error at line %1, column %2:\n%3")
+        qWarning() << "ColorMap read: " <<  QString("Parse error at line %1, column %2:\n%3")
                                  .arg(errorLine)
                                  .arg(errorColumn)
                                  .arg(errorStr);
@@ -48,17 +48,17 @@ bool MaterialMap::read(const QString& fileName)
     return true;
 }
 
-const MaterialMap::Entry& MaterialMap::get(int index)
+const ColorMap::Entry& ColorMap::get(int index)
 {
     return m_data[index];
 }
 
-bool MaterialMap::write(const QString& fileName)
+bool ColorMap::write(const QString& fileName)
 {
     const int IndentSize = 4;
     QFile file(fileName);
     if (!file.open(QFile::WriteOnly | QFile::Text)) {
-        qWarning() << "MaterialMap::write" << " Failed to open file "
+        qWarning() << "ColorMap::write" << " Failed to open file "
                    << fileName << ".  Got error: " << file.errorString();
         return false;
     }
@@ -69,14 +69,14 @@ bool MaterialMap::write(const QString& fileName)
     return true;
 }
 
-void MaterialMap::print()
+void ColorMap::print()
 {
     for (auto e : m_data) {
         qDebug() << "id = " << e.id << ", txt = " << e.txt;
     }
 }
 
-bool MaterialMap::update(const QString& id, const QString& val)
+bool ColorMap::update(const QString& id, const QString& val)
 {
     QDomElement de;
 
@@ -95,7 +95,7 @@ bool MaterialMap::update(const QString& id, const QString& val)
 }
 
 //de.isNull() is true if cannot find the id
-void MaterialMap::find(const QString& id, QDomElement& de)
+void ColorMap::find(const QString& id, QDomElement& de)
 {
     QDomElement root = mDocument.documentElement();
     QDomElement colors = root.firstChildElement("library_colors");

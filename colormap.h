@@ -1,10 +1,10 @@
-#ifndef MATERIALMAP_H
-#define MATERIALMAP_H
+#ifndef COLORMAP_H
+#define COLORMAP_H
 
 #include <QObject>
 #include <QDomDocument>
 
-class MaterialMap
+class ColorMap
 {
 public:
     struct Entry {
@@ -13,7 +13,7 @@ public:
     };
 
 public:
-    MaterialMap();
+    ColorMap();
 
     bool read(const QString& fileName);
     bool write(const QString& fileName);
@@ -30,4 +30,4 @@ private:
     std::vector<Entry> m_data;
 };
 
-#endif // MATERIAL_H
+#endif // COLORMAP_H
