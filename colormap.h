@@ -20,7 +20,9 @@ public:
     bool update(const QString& id, const QString& val);
     void print();
 
-    const Entry& get(int index);
+    Entry* get(int index);
+    int count();
+    int count() const;
 
 private:
     void find(const QString& id, QDomElement& de);

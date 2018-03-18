@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MATERIAL>
+	<library_colors>
+        <color id="background-clr">878782ff</color>
+        <color id="background_transp-clr">696969e9</color>
+        <color id="bgraster_veil_color-clr">00000066</color>
+        <color id="gray-clr">808080ff</color>
+        <color id="black-clr">000000ff</color>
+        <color id="cole-clr">141414ff</color>
+        <color id="white-clr">ffffffff</color>
+        <color id="blue-clr">0000ffff</color>
+        <color id="light_gray-clr">c8c8c8ff</color>
+        <color id="medium_gray-clr">969696ff</color>
+        <color id="dark_gray-clr">3f3f3fff</color>
+        <color id="yellow-clr">ffff00ff</color>
+        <color id="gold-clr">ffdc5cff</color>
+        <color id="water_line_color-clr">5f7f8fff</color>
+        <color id="water_color-clr">5f7f8fff</color>
+        <color id="park_color-clr">798666ff</color>
+        <color id="park_hole_color-clr">ffffffff</color>
+        <color id="campus_color-clr">505050ff</color>
+        <color id="gov_campus_color-clr">898984ff</color>
+        <color id="airport_color-clr">808385ff</color>
+        <color id="airport_text_color-clr">ffffffff</color>
+		<color id="airport_text_outline_color-clr">666666ff</color>
+        <color id="runway_color-clr">707679ff</color>
+        <color id="built_up_color-clr">e4dfd3ff</color>
+		<color id="campus_text_color-clr">ffffffff</color>
+		<color id="campus_text_outline_color-clr">555555ff</color>
+        <color id="sports_campus_color-clr">889297ff</color>
+        <color id="sports_campus_text_color-clr">ffffffff</color>
+		<color id="sports_campus_text_outline_color-clr">568599ff</color>
+        <color id="hospital_campus_color-clr">978c8bff</color>
+        <color id="hospital_campus_text_color-clr">ffffffff</color>
+		<color id="hospital_campus_text_outline_color-clr">775f67ff</color>
+        <color id="shopping_center_color-clr">979486ff</color>
+        <color id="shopping_center_text_color-clr">ffffffff</color>
+		<color id="shopping_center_text_outline_color-clr">7f7b57ff</color>
+        <color id="university_campus_color-clr">978d7aff</color>
+        <color id="university_campus_text_color-clr">ffffffff</color>
+		<color id="university_campus_text_outline_color-clr">877357ff</color>
+        <color id="reservation_color-clr">8c8579ff</color>
+        <color id="reserv_text_color-clr">ffffffff</color>
+		<color id="reserv_text_outline_color-clr">7f6f57ff</color>
+        <color id="military_color-clr">828580ff</color>
+        <color id="military_text_color-clr">ffffffff</color>
+		<color id="military_text_outline_color-clr">676f5fff</color>
+        <color id="city_font_color1-clr">ffffffff</color>
+		<color id="city_font_outline_color1-clr">373737ff</color>
+        <color id="city_font_color2-clr">ffffffff</color>
+		<color id="city_font_outline_color2-clr">676767ff</color>
+        <color id="city_font_color3-clr">ffffffff</color>
+		<color id="city_font_outline_color3-clr">7f735fff</color>
+        <color id="watermark_color-clr">6767677f</color>
+		<color id="watermark_outline_color-clr">ffffff7f</color>
+        <color id="ocean_text_color-clr">ffffffff</color>
+		<color id="ocean_text_outline_color-clr">5f7f88ff</color>
+        <color id="white_glow_color-clr">ffffff7f</color>
+        <color id="building_color-clr">8e8e8ec0</color>
+        <color id="building_outline_color-clr">a6a6a6ff</color>
+        <color id="building_text_color-clr">ffffffff</color>
+        <color id="building_text_outline_color-clr">535353ff</color>
+        <color id="water_text_color-clr">ffffffff</color>
+        <color id="water_text_outline_color-clr">5f7f88ff</color>
+
+        <color id="park_text_color-clr">ffffffff</color>
+		<color id="park_text_outline_color-clr">6f775fff</color>
+        <color id="state_border_color-clr">736c5bff</color>
+        <color id="country_border_color-clr">565446ff</color>
+        <color id="country_border_outline_color-clr">8a8b874c</color>
+        <color id="road_regional_color-clr">606060ff</color>
+        <color id="road_regional_color_tunnel-clr">6060607f</color>
+        <color id="road_regional_outline_color-clr">676767ff</color>
+        <color id="toll_color-clr">f6cd6cff</color>
+        <color id="toll_color_tunnel-clr">f6cd6c7f</color>
+        <color id="toll_outline_color-clr">e9a70aff</color>
+        <color id="ferry_text_color-clr">ffffffff</color>
+        <color id="FerryTextOutlineColor">5f7f8fff</color>
+		<color id="railroad_text_color-clr">ffffffff</color>
+		<color id="railroad_text_outline_color-clr">373737ff</color>
+        <!--remember to change this-->
+        <color id="arrow_color-clr">4290bbff</color>
+        <color id="color_rail_outline-clr">a0a0a0ff</color>
+        <color id="color_rail_bg_far-clr">888888ff</color>
+        <!--add 20110728 begin-->
+        <color id="road_limited_access-clr">f6cd6cff</color>
+        <color id="road_limited_access_tunnel-clr">f6cd6c7f</color>
+        <color id="road_limited_access_outline-clr">e9a70aff</color>
+        <!--Gareth adjusted alpha channel. Was 4c-->
+        <color id="road_local-clr">606060ff</color>
+        <color id="road_local_tunnel-clr">6060607f</color>
+        <color id="road_local_outline-clr">676767ff</color>
+        <color id="road_ramp-clr">f6cd6cff</color>
+        <color id="road_ramp_tunnel-clr">f6cd6c7f</color>
+        <color id="road_ramp_outline-clr">e9a70aff</color>
+        <color id="road_tunnel-clr">d4d4d44a</color>
+        <color id="road_tunnel-interior-clr">c3b68280</color>
+        <color id="road_tunnel_outline-clr">a99e93ff</color>
+        <!--Gareth changed to offset harsh aliasing-->
+        <color id="road_ferry-clr">165377ff</color>
+		<color id="road_ferry_off-clr">16537700</color>
+        <color id="road_ferry_outline-clr">414141ff</color>
+        <!--add 20110728 end-->
+        <color id="road_walkway-clr">606060ff</color>
+        <color id="road_walkway_tunnel-clr">6060607f</color> 
+        <color id="road_notdrivable-clr">606060ff</color>
+        <color id="road_notdrivable_tunnel-clr">6060607f</color>
+        <!--Gareth added walkway color 20110203-->
+        <color id="arrow-clr">0096ffff</color>
+        <!--remember to change this-->
+        <color id="four-side-gradient-degree0-clr">686868ff</color>
+        <color id="four-side-gradient-degree180-clr">686868ff</color>
+        <color id="four-side-gradient-degree270-clr">595959ff</color>
+        <color id="four-side-gradient-degree90-clr">595959ff</color>
+        <color id="four-side-gradient-top-clr">777777ff</color>
+        <color id="four-side-gradient-bottom-clr">777777ff</color>
+        <color id="road_off-clr">ffffff00</color>
+        <color id="black_text-clr">242826ff</color>
+        <color id="road_normal-clr">606060ff</color>
+        <color id="road_normal_tunnel-clr">6060607f</color>
+        <color id="road_normal_outline-clr">676767ff</color>
+        <color id="TollTextColor">ffffffff</color>
+        <color id="TollHaloColor">333333ff</color>
+        <color id="LimitedTextColor">ffffffff</color>
+        <color id="LimitedHaloColor">333333ff</color>
+        <color id="ArterialTextColor">ffffffff</color>
+        <color id="ArterialHaloColor">333333ff</color>
+        <color id="LocalTextColor">ffffffff</color>
+        <color id="LocalHaloColor">333333ff</color>
+		
+		<color id="poi_text_park_color-clr">ffffffff</color>
+		<color id="poi_text_outline_park_color-clr">575757ff</color>
+        <color id="poi_text_library_color-clr">ffffffff</color>
+		<color id="poi_text_outline_library_color-clr">575757ff</color>
+        <color id="poi_text_taxi_color-clr">ffffffff</color>
+		<color id="poi_text_outline_taxi_color-clr">575757ff</color>
+        <color id="poi_text_military_color-clr">ffffffff</color>
+		<color id="poi_text_outline_military_color-clr">575757ff</color>
+        <color id="poi_text_restaurant_color-clr">ffffffff</color>
+		<color id="poi_text_outline_restaurant_color-clr">575757ff</color>
+        <color id="poi_text_doctor_color-clr">ffffffff</color>
+		<color id="poi_text_outline_doctor_color-clr">575757ff</color>
+        <color id="poi_text_cemetery_color-clr">ffffffff</color>
+		<color id="poi_text_outline_cemetery_color-clr">575757ff</color>
+        <color id="poi_text_gas_color-clr">ffffffff</color>
+		<color id="poi_text_outline_gas_color-clr">575757ff</color>
+        <color id="poi_text_dentist_color-clr">ffffffff</color>
+		<color id="poi_text_outline_dentist_color-clr">575757ff</color>
+        <color id="poi_text_golf_color-clr">ffffffff</color>
+		<color id="poi_text_outline_golf_color-clr">575757ff</color>
+        <color id="poi_text_shop_color-clr">ffffffff</color>
+		<color id="poi_text_outline_shop_color-clr">575757ff</color>
+        <color id="poi_text_chiropractor_color-clr">ffffffff</color>
+		<color id="poi_text_outline_chiropractor_color-clr">575757ff</color>
+        <color id="poi_text_airport_color-clr">ffffffff</color>
+		<color id="poi_text_outline_airport_color-clr">575757ff</color>
+        <color id="poi_text_grocery_color-clr">ffffffff</color>
+		<color id="poi_text_outline_grocery_color-clr">575757ff</color>
+        <color id="poi_text_autorepair_color-clr">ffffffff</color>
+		<color id="poi_text_outline_autorepair_color-clr">575757ff</color>
+        <color id="poi_text_sports_color-clr">ffffffff</color>
+		<color id="poi_text_outline_sports_color-clr">575757ff</color>
+        <color id="poi_text_postoffice_color-clr">ffffffff</color>
+		<color id="poi_text_outline_postoffice_color-clr">575757ff</color>
+        <color id="poi_text_touristinfo_color-clr">ffffffff</color>
+		<color id="poi_text_outline_touristinfo_color-clr">575757ff</color>
+        <color id="poi_text_university_color-clr">ffffffff</color>
+		<color id="poi_text_outline_university_color-clr">575757ff</color>
+        <color id="poi_text_bank_color-clr">ffffffff</color>
+		<color id="poi_text_outline_bank_color-clr">575757ff</color>
+        <color id="poi_text_police_color-clr">ffffffff</color>
+		<color id="poi_text_outline_police_color-clr">575757ff</color>
+        <color id="poi_text_hospital_color-clr">ffffffff</color>
+		<color id="poi_text_outline_hospital_color-clr">575757ff</color>
+        <color id="poi_text_atm_color-clr">ffffffff</color>
+		<color id="poi_text_outline_atm_color-clr">575757ff</color>
+        <color id="poi_text_pharmacy_color-clr">ffffffff</color>
+		<color id="poi_text_outline_pharmacy_color-clr">575757ff</color>
+        <color id="poi_text_shopping_color-clr">ffffffff</color>
+		<color id="poi_text_outline_shopping_color-clr">575757ff</color>
+        <color id="poi_text_coffee_color-clr">ffffffff</color>
+		<color id="poi_text_outline_coffee_color-clr">575757ff</color>
+        <color id="poi_text_urgent_color-clr">ffffffff</color>
+		<color id="poi_text_outline_urgent_color-clr">575757ff</color>
+        <color id="poi_text_government_color-clr">ffffffff</color>
+		<color id="poi_text_outline_government_color-clr">575757ff</color>
+        <color id="poi_text_ferry_color-clr">ffffffff</color>
+		<color id="poi_text_outline_ferry_color-clr">575757ff</color>
+        <color id="poi_text_hotel_color-clr">ffffffff</color>
+		<color id="poi_text_outline_hotel_color-clr">575757ff</color>
+        <color id="poi_text_train_color-clr">ffffffff</color>
+		<color id="poi_text_outline_train_color-clr">575757ff</color>
+        <color id="poi_text_parking_color-clr">ffffffff</color>
+		<color id="poi_text_outline_parking_color-clr">575757ff</color>
+        <color id="poi_text_metro_color-clr">ffffffff</color>
+		<color id="poi_text_outline_metro_color-clr">575757ff</color>
+        <color id="poi_text_landmark_color-clr">ffffffff</color>
+		<color id="poi_text_outline_landmark_color-clr">575757ff</color>
+        <color id="poi_text_bus_color-clr">ffffffff</color>
+		<color id="poi_text_outline_bus_color-clr">575757ff</color>
+		
+    </library_colors>
+    <library_images>
+        <!--image id="park_night-img">
+            <file>icons/park_tile_night.png</file>
+        </image>
+        <!--image id="terrain_park-img">
+            <file>stip-park.png</file>
+        </image>
+        <image id="terrain_geometry-img">
+            <file>stip-cemetery.png</file>
+        </image>
+        <image id="terrain_golf-img">
+            <file>stip-golf.png</file>
+        </image>
+        <image id="terrain_national_park-img">
+            <file>stip-natpark.png</file>
+        </image>
+        <image id="terrain_national_forest-img">
+            <file>stip-natforest.png</file>
+        </image>
+        <image id="terrain_cemetery-img">
+            <file>stip-cemetery.png</file>
+        </image>
+        <image id="area_building-img">
+            <file>area_building.PNG</file>
+        </image>
+        <image id="area_campus-img">
+            <file>area_campus.PNG</file>
+        </image>
+        <image id="area_geopolitical-img">
+            <file>area_geopolitical.PNG</file>
+        </image>
+        <image id="area_interior-img">
+            <file>area_interior.PNG</file>
+        </image>
+        <image id="area_park-img">
+            <file>area_park.PNG</file>
+        </image-->
+        <!--image id="area_water-img">
+            <file>icons/area_water_night.PNG</file>
+        </image-->
+        <!--add 20110728 end-->
+    </library_images>
+	<library_configs>
+		<BackgroundRasterConfig>karmadts_rast_night</BackgroundRasterConfig>
+	</library_configs>
+</MATERIAL>

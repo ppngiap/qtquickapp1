@@ -1,17 +1,17 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include "material.h"
+#include "colortheme.h"
 #include "colormap.h"
 #include "materiallistmodel.h"
 
 
-void testMaterialTheme()
+void testColorTheme()
 {
-    Material m;
-    m.read("input/daynav.xml");
-    m.print();
-    m.update("yellow-clr", "00ff22ff");
-    m.write("output/outnav.xml");
+    ColorTheme ct;
+    ct.read("input/daynav.xml");
+    ct.print();
+    ct.update("yellow-clr", "00ff22ff");
+    ct.write("output/outnav.xml");
 }
 
 void testMaterialMap()
@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
         return -1;
 
     testMaterialMap();
+    testColorTheme();
 
     return app.exec();
 }

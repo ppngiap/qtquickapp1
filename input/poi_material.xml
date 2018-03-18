@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MATERIAL>
+    <document>
+        <contributor>
+            <author>TCS</author>
+            <copyright>Copyright 2013, TCS</copyright>
+            <source_data>POI Material</source_data>
+        </contributor>
+        <created>2013-12-01T15:00:00.0Z</created>
+        <modified />
+        <revision>1.0.0</revision>
+    </document>
+    <library_fonts>
+        <font id="airportfont" style="Normal" index="0" color="poi_text_airport_color-clr" outlinecolor="poi_text_outline_airport_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="coffeefont" style="Normal" index="1" color="poi_text_coffee_color-clr" outlinecolor="poi_text_outline_coffee_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="gasfont" style="Normal" index="2" color="poi_text_gas_color-clr" outlinecolor="poi_text_outline_gas_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="golffont" style="Normal" index="3" color="poi_text_golf_color-clr" outlinecolor="poi_text_outline_golf_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="groceryfont" style="Normal" index="4" color="poi_text_grocery_color-clr" outlinecolor="poi_text_outline_grocery_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="hospitalfont" style="Normal" index="5" color="poi_text_hospital_color-clr" outlinecolor="poi_text_outline_hospital_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="hotelfont" style="Normal" index="6" color="poi_text_hotel_color-clr" outlinecolor="poi_text_outline_hotel_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="metrofont" style="Normal" index="7" color="poi_text_metro_color-clr" outlinecolor="poi_text_outline_metro_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="militaryfont" style="Normal" index="8" color="poi_text_military_color-clr" outlinecolor="poi_text_outline_military_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="parkingfont" style="Normal" index="9" color="poi_text_parking_color-clr" outlinecolor="poi_text_outline_parking_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="parkfont" style="Normal" index="10" color="poi_text_park_color-clr" outlinecolor="poi_text_outline_park_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="restaurantfont" style="Normal" index="11" color="poi_text_restaurant_color-clr" outlinecolor="poi_text_outline_restaurant_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="urgentcarefont" style="Normal" index="12" color="poi_text_urgent_color-clr" outlinecolor="poi_text_outline_urgent_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="cemeteryfont" style="Normal" index="13" color="poi_text_cemetery_color-clr" outlinecolor="poi_text_outline_cemetery_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="trainfont" style="Normal" index="14" color="poi_text_train_color-clr" outlinecolor="poi_text_outline_train_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="atmfont" style="Normal" index="15" color="poi_text_atm_color-clr" outlinecolor="poi_text_outline_atm_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="autorepairfont" style="Normal" index="16" color="poi_text_autorepair_color-clr" outlinecolor="poi_text_outline_autorepair_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="bankfont" style="Normal" index="17" color="poi_text_bank_color-clr" outlinecolor="poi_text_outline_bank_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="busfont" style="Normal" index="18" color="poi_text_bus_color-clr" outlinecolor="poi_text_outline_bus_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="chiropractorfont" style="Normal" index="19" color="poi_text_chiropractor_color-clr" outlinecolor="poi_text_outline_chiropractor_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="dentistfont" style="Normal" index="20" color="poi_text_dentist_color-clr" outlinecolor="poi_text_outline_dentist_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="doctorfont" style="Normal" index="21" color="poi_text_doctor_color-clr" outlinecolor="poi_text_outline_doctor_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="ferryfont" style="Normal" index="22" color="poi_text_ferry_color-clr" outlinecolor="poi_text_outline_ferry_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="governmentfont" style="Normal" index="23" color="poi_text_government_color-clr" outlinecolor="poi_text_outline_government_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="landmarkfont" style="Normal" index="24" color="poi_text_landmark_color-clr" outlinecolor="poi_text_outline_landmark_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="libraryfont" style="Normal" index="25" color="poi_text_library_color-clr" outlinecolor="poi_text_outline_library_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="pharmacyfont" style="Normal" index="26" color="poi_text_pharmacy_color-clr" outlinecolor="poi_text_outline_pharmacy_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="policefont" style="Normal" index="27" color="poi_text_police_color-clr" outlinecolor="poi_text_outline_police_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="postofficefont" style="Normal" index="28" color="poi_text_postoffice_color-clr" outlinecolor="poi_text_outline_postoffice_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="shoppingfont" style="Normal" index="29" color="poi_text_shopping_color-clr" outlinecolor="poi_text_outline_shopping_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="shopfont" style="Normal" index="30" color="poi_text_shop_color-clr" outlinecolor="poi_text_outline_shop_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="sportsfont" style="Normal" index="31" color="poi_text_sports_color-clr" outlinecolor="poi_text_outline_sports_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="taxifont" style="Normal" index="32" color="poi_text_taxi_color-clr" outlinecolor="poi_text_outline_taxi_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="touristinfofont" style="Normal" index="33" color="poi_text_touristinfo_color-clr" outlinecolor="poi_text_outline_touristinfo_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="universityfont" style="Normal" index="34" color="poi_text_university_color-clr" outlinecolor="poi_text_outline_university_color-clr" draworder_type="poi_label">14 14 0 1</font>
+        <font id="chargingfont" style="Normal" index="55" color="poi_text_charging_color-clr" outlinecolor="poi_text_outline_charging_color-clr" draworder_type="poi_label">14 14 0 1</font>
+    </library_fonts>
+    <library_materials count="21">
+        <material id="airport" name="Airport" index="35" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/airport.png" />
+                <selected_image url="pois/airport.png" />
+                <unselected_image url="pois/airport.png" />
+            </poi>
+        </material>
+        <material id="landmark" name="Landmark" index="36" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/landmarks.png" />
+                <selected_image url="pois/landmarks.png" />
+                <unselected_image url="pois/landmarks.png" />
+            </poi>
+        </material>
+        <material id="sports" name="Sports" index="37" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/sports.png" />
+                <selected_image url="pois/sports.png" />
+                <unselected_image url="pois/sports.png" />
+            </poi>
+        </material>
+        <material id="hospital" name="Hospital" index="38" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/hospitals.png" />
+                <selected_image url="pois/hospitals.png" />
+                <unselected_image url="pois/hospitals.png" />
+            </poi>
+        </material>
+        <material id="gas" name="Gas" index="39" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/gas.png" />
+                <selected_image url="pois/gas.png" />
+                <unselected_image url="pois/gas.png" />
+            </poi>
+        </material>
+        <material id="hotel" name="Hotel" index="40" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/hotels.png" />
+                <selected_image url="pois/hotels.png" />
+                <unselected_image url="pois/hotels.png" />
+            </poi>
+        </material>
+        <material id="parking" name="Parking" index="41" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/parking.png" />
+                <selected_image url="pois/parking.png" />
+                <unselected_image url="pois/parking.png" />
+            </poi>
+        </material>
+        <material id="shopping" name="Shopping" index="42" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/shopping.png" />
+                <selected_image url="pois/shopping.png" />
+                <unselected_image url="pois/shopping.png" />
+            </poi>
+        </material>
+        <material id="shop" name="Shop" index="43" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/shops.png" />
+                <selected_image url="pois/shops.png" />
+                <unselected_image url="pois/shops.png" />
+            </poi>
+        </material>
+        <material id="grocery" name="Grocery" index="44" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/grocery.png" />
+                <selected_image url="pois/grocery.png" />
+                <unselected_image url="pois/grocery.png" />
+            </poi>
+        </material>
+        <material id="pharmacy" name="Pharmacy" index="45" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/pharmacy.png" />
+                <selected_image url="pois/pharmacy.png" />
+                <unselected_image url="pois/pharmacy.png" />
+            </poi>
+        </material>
+        <material id="library" name="Library" index="46" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/library.png" />
+                <selected_image url="pois/library.png" />
+                <unselected_image url="pois/library.png" />
+            </poi>
+        </material>
+        <material id="ferry" name="Ferry" index="47" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/ferry.png" />
+                <selected_image url="pois/ferry.png" />
+                <unselected_image url="pois/ferry.png" />
+            </poi>
+        </material>
+        <material id="train" name="Train" index="48" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/train.png" />
+                <selected_image url="pois/train.png" />
+                <unselected_image url="pois/train.png" />
+            </poi>
+        </material>
+        <material id="bus" name="Bus" index="49" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/bus.png" />
+                <selected_image url="pois/bus.png" />
+                <unselected_image url="pois/bus.png" />
+            </poi>
+        </material>
+        <material id="touristinfo" name="Tourist Info" index="50" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/touristinfo.png" />
+                <selected_image url="pois/touristinfo.png" />
+                <unselected_image url="pois/touristinfo.png" />
+            </poi>
+        </material>
+        <material id="police" name="Police" index="51" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/police.png" />
+                <selected_image url="pois/police.png" />
+                <unselected_image url="pois/police.png" />
+            </poi>
+        </material>
+        <material id="coffee" name="Coffee" index="52" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/coffee.png" />
+                <selected_image url="pois/coffee.png" />
+                <unselected_image url="pois/coffee.png" />
+            </poi>
+        </material>
+        <material id="restaurant" name="Restaurant" index="53" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/restaurants.png" />
+                <selected_image url="pois/restaurants.png" />
+                <unselected_image url="pois/restaurants.png" />
+            </poi>
+        </material>
+        <material id="bank" name="Bank" index="54" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/banks.png" />
+                <selected_image url="pois/banks.png" />
+                <unselected_image url="pois/banks.png" />
+            </poi>
+        </material>
+        <material id="charging" name="Charging Station" index="56" draworder_type="poi">
+            <poi callout_xoffset="50" callout_yoffset="50" bubble_xoffset="50" bubble_yoffset="10" distance_to_object="20" distance_to_label="5" distance_to_poi="36" width="36" height="36">
+                <icon url="pois/chargingstation.png" />
+                <selected_image url="pois/chargingstation.png" />
+                <unselected_image url="pois/chargingstation.png" />
+            </poi>
+        </material>        
+    </library_materials>
+    <library_binds />
+    <library_configs>
+        <building id="0" name="building-adjuestment-dat" reduction="0.3" constant="3" />
+        <building id="1" name="landmark-adjuestment-dat" reduction="0.7" constant="0" />
+    </library_configs>
+</MATERIAL>

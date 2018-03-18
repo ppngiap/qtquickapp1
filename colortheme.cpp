@@ -1,22 +1,22 @@
-#include "colormap.h"
+#include "colortheme.h"
 #include <QFile>
 #include <QDebug>
 #include <QTextStream>
 #include <QtGlobal>
 
-ColorMap::ColorMap()
+ColorTheme::ColorTheme()
 {
 
 }
 
-bool ColorMap::read(const QString& fileName)
+bool ColorTheme::read(const QString& fileName)
 {
     if (fileName.isEmpty())
         return false;
 
     QFile file(fileName);
     if (!file.open(QFile::ReadOnly | QFile::Text)) {
-        qWarning() << "ColorMap::read" << " Failed to read file "
+        qWarning() << "ColorTheme::read" << " Failed to read file "
                    << fileName << ".  Got error: " << file.errorString();
         return false;
     }
@@ -26,7 +26,7 @@ bool ColorMap::read(const QString& fileName)
     int errorColumn;
 
     if (!mDocument.setContent(&file, true, &errorStr, &errorLine, &errorColumn)) {
-        qWarning() << "ColorMap read: " <<  QString("Parse error at line %1, column %2:\n%3")
+        qWarning() << "ColorTheme read: " <<  QString("Parse error at line %1, column %2:\n%3")
                                  .arg(errorLine)
                                  .arg(errorColumn)
                                  .arg(errorStr);
@@ -34,13 +34,30 @@ bool ColorMap::read(const QString& fileName)
     }
 
     QDomElement root = mDocument.documentElement();
-    QDomElement child = root.firstChildElement("color");
+    QDomElement colors = root.firstChildElement("library_colors");
+    if (colors.isNull()) {
+        qWarning() << "COLORTHEME Emtpy colors";
+        return false;
+    }
+    QDomElement child = colors.firstChildElement("color");
     while (!child.isNull()) {
+        QString id = child.attribute("id");
+
+        bool ok;
+        QString s = child.text();
+        unsigned int rgba = s.toUInt(&ok, 16);
+        Q_ASSERT(ok);
+        if (!ok) {
+            qWarning() << "COLORTHEME Failed to convert to hex for " << id << "with value " << s;
+        }
+
         Entry e;
-        e.id = child.attribute("id");
-        e.txt = child.attribute("txt");
+        e.id = id;
+        e.color = QColor::fromRgba(rgba);
+
         m_data.push_back(e);
-//        qDebug() << "id = " << child.attribute("id") << ", txt = " << child.attribute("txt");
+
+        qDebug() << "id = " << id << ", val = " << s;
         child = child.nextSiblingElement("color");
     }
 
@@ -48,27 +65,34 @@ bool ColorMap::read(const QString& fileName)
     return true;
 }
 
-ColorMap::Entry* ColorMap::get(int index)
+ColorTheme::Entry *ColorTheme::get(int index)
 {
     return &m_data[index];
 }
 
-int ColorMap::count()
+ColorTheme::Entry* ColorTheme::find(const QString &id)
+{
+    ColorTheme::Entry *entry = NULL;
+    for (auto e : m_data) {
+        if (e.id == id) {
+            entry = &e;
+            break;
+        }
+    }
+
+    return entry;
+}
+int ColorTheme::count() const
 {
     return m_data.size();
 }
 
-int ColorMap::count() const
-{
-    return m_data.size();
-}
-
-bool ColorMap::write(const QString& fileName)
+bool ColorTheme::write(const QString& fileName)
 {
     const int IndentSize = 4;
     QFile file(fileName);
     if (!file.open(QFile::WriteOnly | QFile::Text)) {
-        qWarning() << "ColorMap::write" << " Failed to open file "
+        qWarning() << "ColorTheme::write" << " Failed to open file "
                    << fileName << ".  Got error: " << file.errorString();
         return false;
     }
@@ -79,14 +103,19 @@ bool ColorMap::write(const QString& fileName)
     return true;
 }
 
-void ColorMap::print()
+void ColorTheme::print()
 {
-    for (auto e : m_data) {
-        qDebug() << "id = " << e.id << ", txt = " << e.txt;
+    QDomElement root = mDocument.documentElement();
+    QDomElement colors = root.firstChildElement("library_colors");
+    if (colors.isNull()) return;
+    QDomElement child = colors.firstChildElement("color");
+    while (!child.isNull()) {
+        qDebug() << "id = " << child.attribute("id") << ", val = " << child.text();
+        child = child.nextSiblingElement("color");
     }
 }
 
-bool ColorMap::update(const QString& id, const QString& val)
+bool ColorTheme::update(const QString& id, const QString& val)
 {
     QDomElement de;
 
@@ -105,7 +134,7 @@ bool ColorMap::update(const QString& id, const QString& val)
 }
 
 //de.isNull() is true if cannot find the id
-void ColorMap::find(const QString& id, QDomElement& de)
+void ColorTheme::find(const QString& id, QDomElement& de)
 {
     QDomElement root = mDocument.documentElement();
     QDomElement colors = root.firstChildElement("library_colors");

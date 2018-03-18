@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MATERIAL>
+	<library_binds>
+        <bind type="Line" style="Cartographic" usage="FerryBoat" material="line_cartographic_ferryboat-mat">
+            <LBL level="4">
+                <text font="FerryFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Cartographic" usage="Railroad" material="line_cartographic_railroad-mat">
+            <LBL level="4">
+                <text font="RailroadFont" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Water" usage="River" material="line_water_river-mat" />
+        <bind type="Line" style="Political" usage="StateBorder" material="line_political_stateborder-mat" />
+        <bind type="Line" style="Political" usage="CountryBorder" material="line_political_countryborder-mat" />
+        <bind type="Line" style="Road" usage="Walkway" material="line_road_walkway-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="NotDrivable" material="line_road_notdrivable-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="Unpaved" material="line_road_unpaved-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="Private" material="line_road_private-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="Local" material="line_road_local-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="Normal" material="line_road_normal-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="Ramp" material="line_road_ramp-mat" />
+        <bind type="Line" style="Road" usage="Regional" material="line_road_regional-mat">
+            <LBL level="3">
+                <text font="ArterialFontSmall" priority="10" sublevel="0" />
+                <text font="ArterialFontMedium" priority="10" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ArterialFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="Carpool" material="line_road_carpool-mat">
+            <LBL level="3">
+                <text font="CarpoolFontMedium" priority="10" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="CarpoolFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="BussOnly" material="line_road_bussonly-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="TollRamp" material="line_road_tollramp-mat" />
+        <bind type="Line" style="Road" usage="Interchange" material="line_road_interchange-mat" />
+        <bind type="Line" style="Road" usage="Highway" material="line_road_highway-mat">
+            <LBL level="2">
+                <text font="LimitedFontSmall" priority="10" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="LimitedFontMedium" priority="10" sublevel="0" />
+                <text font="LimitedFontBig" priority="10" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="LimitedFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="National" material="line_road_national-mat">
+            <LBL level="2">
+                <text font="LimitedFontSmall" priority="10" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="LimitedFontMedium" priority="10" sublevel="0" />
+                <text font="LimitedFontBig" priority="10" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="LimitedFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Road" usage="TollRoad" material="line_road_tollroad-mat">
+            <LBL level="2">
+                <text font="TollFontSmall" priority="10" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="TollFontMedium" priority="10" sublevel="0" />
+                <text font="TollFontBig" priority="10" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="TollFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="Interchange" material="line_tunnel_interchange-mat" />
+        <bind type="Line" style="Tunnel" usage="NotDrivable" material="line_tunnel_notdrivable-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="Unpaved" material="line_tunnel_unpaved-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="Carpool" material="line_tunnel_carpool-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="Ramp" material="line_tunnel_ramp-mat" />
+        <bind type="Line" style="Tunnel" usage="BussOnly" material="line_tunnel_bussonly-mat" />
+        <bind type="Line" style="Tunnel" usage="TollRoad" material="line_tunnel_tollroad-mat">
+            <LBL level="2">
+                <text font="TollFontSmall" priority="10" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="TollFontMedium" priority="10" sublevel="0" />
+                <text font="TollFontBig" priority="10" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="TollFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="TollRamp" material="line_tunnel_tollramp-mat" />
+        <bind type="Line" style="Tunnel" usage="Local" material="line_tunnel_local-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="Normal" material="line_tunnel_normal-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="Regional" material="line_tunnel_regional-mat">
+            <LBL level="3">
+                <text font="ArterialFontSmall" priority="10" sublevel="0" />
+                <text font="ArterialFontMedium" priority="10" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ArterialFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="Highway" material="line_tunnel_highway-mat">
+            <LBL level="2">
+                <text font="LimitedFontSmall" priority="10" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="LimitedFontMedium" priority="10" sublevel="0" />
+                <text font="LimitedFontBig" priority="10" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="LimitedFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="National" material="line_tunnel_national-mat">
+            <LBL level="2">
+                <text font="LimitedFontSmall" priority="10" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="LimitedFontMedium" priority="10" sublevel="0" />
+                <text font="LimitedFontBig" priority="10" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="LimitedFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="Walkway" material="line_tunnel_walkway-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Line" style="Tunnel" usage="Private" material="line_tunnel_private-mat">
+            <LBL level="4">
+                <text font="LocalFontBig" priority="10" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Water" usage="Ocean" material="area_water_ocean-mat">
+            <!-- <text font="OceanFontBig" priority="7" />
+			-->
+        </bind>
+        <bind type="Area" style="Hole" usage="Ocean" material="area_hole_ocean-mat" />
+        <bind type="Area" style="Political" usage="Reservation" material="area_political_reservation-mat">
+            <LBL level="3">
+                <text font="ReservFontSmall" priority="7" sublevel="0" />
+                <text font="ReservFontMedium" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ReservFontMedium" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Political" usage="BuiltUp" material="area_political_builtup-mat" />
+        <bind type="Area" style="Campus" usage="Military" material="area_campus_military-mat">
+            <LBL level="3">
+                <text font="MilitaryFontSmall" priority="7" sublevel="0" />
+                <text font="MilitaryFontMedium" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="MilitaryFontMedium" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Campus" usage="Sports" material="area_campus_sports-mat">
+            <LBL level="3">
+                <text font="CampusFontSportsComplexSmall" priority="7" sublevel="0" />
+                <text font="CampusFontSportsComplexMedium" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="CampusFontSportsComplexMedium" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Campus" usage="Hospital" material="area_campus_hospital-mat">
+            <LBL level="3">
+                <text font="CampusFontHospitalSmall" priority="7" sublevel="0" />
+            </LBL>
+			<LBL level="4">
+                <text material="area_campus_hospital-mat" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Campus" usage="Shopping" material="area_campus_shopping-mat">
+            <LBL level="3">
+                <text font="CampusFontShoppingSmall" priority="7" sublevel="0" />
+                <text font="CampusFontShoppingMedium" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="CampusFontShoppingMedium" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Campus" usage="Government" material="area_campus_government-mat">
+            <LBL level="3">
+                <text font="CampusFontSmall" priority="7" sublevel="0" />
+                <text font="CampusFontMedium" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="CampusFontMedium" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Campus" usage="University" material="area_campus_university-mat">
+            <text font="CampusFontUniversityBig" priority="7" />
+            <LBL level="3">
+                <text font="CampusFontUniversitySmall" priority="7" sublevel="0" />
+                <text font="CampusFontUniversityMedium" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="CampusFontUniversityMedium" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Park" usage="StatePark" material="area_park_statepark-mat">
+            <LBL level="1">
+                <text font="ParkFontTiny" priority="7" sublevel="3" />
+                <text font="ParkFontSmall" priority="7" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontMedium" priority="7" sublevel="1" />
+                <text font="ParkFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontBig" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ParkFontHuge" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Hole" usage="StatePark" material="area_hole_statepark-mat" />
+        <bind type="Area" style="Park" usage="Woodland" material="area_park_woodland-mat">
+            <LBL level="1">
+                <text font="ParkFontTiny" priority="7" sublevel="3" />
+                <text font="ParkFontSmall" priority="7" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontMedium" priority="7" sublevel="1" />
+                <text font="ParkFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontBig" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ParkFontHuge" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Park" usage="LocalPark" material="area_park_localpark-mat">
+            <LBL level="2">
+                <text font="ParkFontMedium" priority="7" sublevel="1" />
+                <text font="ParkFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontBig" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ParkFontHuge" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Park" usage="Park" material="area_park_park-mat">
+            <LBL level="2">
+                <text font="ParkFontMedium" priority="7" sublevel="1" />
+                <text font="ParkFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontBig" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ParkFontHuge" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Park" usage="Cemetery" material="area_park_cemetery-mat">
+            <LBL level="2">
+                <text font="ParkFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontBig" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ParkFontHuge" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Park" usage="GolfCourse" material="area_park_golfcourse-mat">
+            <LBL level="2">
+                <text font="ParkFontMedium" priority="7" sublevel="1" />
+                <text font="ParkFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontBig" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ParkFontHuge" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Park" usage="NationalPark" material="area_park_nationalpark-mat">
+            <LBL level="1">
+                <text font="ParkFontTiny" priority="7" sublevel="3" />
+                <text font="ParkFontSmall" priority="7" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontMedium" priority="7" sublevel="1" />
+                <text font="ParkFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontBig" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ParkFontHuge" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Hole" usage="NationalPark" material="area_hole_nationalpark-mat" />
+        <bind type="Area" style="Park" usage="NationalOtherPark" material="area_park_nationalotherpark-mat">
+            <LBL level="1">
+                <text font="ParkFontTiny" priority="7" sublevel="3" />
+                <text font="ParkFontSmall" priority="7" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontMedium" priority="7" sublevel="1" />
+                <text font="ParkFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="ParkFontMedium" priority="7" sublevel="0" />
+                <text font="ParkFontBig" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="ParkFontHuge" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Water" usage="Lake" material="area_water_lake-mat">
+            <LBL level="1">
+                <text font="WaterFontTiny" priority="7" sublevel="3" />
+                <text font="WaterFontSmall" priority="7" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="WaterFontMedium" priority="7" sublevel="0" />
+                <text font="WaterFontMedium" priority="7" sublevel="1" />
+                <text font="WaterFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="WaterFontMedium" priority="7" sublevel="0" />
+                <text font="WaterFontMedium" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="WaterFontBig" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Water" usage="River" material="area_water_river-mat">
+            <LBL level="1">
+                <text font="WaterFontTiny" priority="7" sublevel="3" />
+                <text font="WaterFontSmall" priority="7" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="WaterFontMedium" priority="7" sublevel="0" />
+                <text font="WaterFontMedium" priority="7" sublevel="1" />
+                <text font="WaterFontMedium" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="WaterFontMedium" priority="7" sublevel="0" />
+                <text font="WaterFontMedium" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="WaterFontBig" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Area" style="Water" usage="BayHarbour" material="area_water_bayharbour-mat">
+            <!-- <text font="WaterFontSmall" priority="7" />
+			-->
+        </bind>
+        <bind type="Area" style="Island" usage="Island" material="area_island_island-mat" />
+        <bind type="Area" style="Campus" usage="Airport" material="area_campus_airport-mat">
+            <!--
+			<LBL level="2">
+                <text font="AirportFontTiny" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="AirportFontSmall" priority="7" sublevel="0" />
+                <text font="AirportFontMedium" priority="7" sublevel="1" />
+            </LBL>
+            <LBL level="4">
+                <text font="AirportFontBig" priority="7" sublevel="0" />
+            </LBL>
+			-->
+        </bind>
+        <bind type="Area" style="Interior" usage="Runway" material="area_interior_runway-mat" />
+        <bind type="Area" style="Hole" usage="Runway" material="area_hole_runway-mat" />
+        <bind type="Area" style="Building" usage="Any" material="area_building_any-mat-new">
+            <text font="AreaBuildingFontBig" priority="7" />
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="Ocean" material="">
+            <LBL level="0">
+                <text font="OceanFontSmall" priority="1" sublevel="2" />
+                <text font="OceanFontMedium" priority="1" sublevel="3" />
+                <text font="OceanFontBig" priority="1" sublevel="4" />
+                <text font="OceanFontBig" priority="1" sublevel="5" />
+            </LBL>
+            <LBL level="1">
+                <text font="OceanFontBig" priority="1" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="Continent" material="">
+            <LBL level="0">
+                <text font="ContinentTiny" priority="1" sublevel="2" />
+                <text font="ContinentWatermarkTiny" priority="1" sublevel="3" />
+                <text font="ContinentWatermarkSmall" priority="1" sublevel="4" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="SuperCountry" material="">
+            <LBL level="0">
+                <text font="SuperCountryBoldSmall" priority="1" sublevel="3" />
+                <text font="SuperCountryBoldMedium" priority="1" sublevel="4" />
+                <text font="SuperCountryBoldWatermark" priority="1" sublevel="5" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="LargeCountry" material="">
+            <LBL level="0">
+                <text font="LargeCountryBoldSmall" priority="1" sublevel="3" />
+                <text font="LargeCountryBoldMedium" priority="1" sublevel="4" />
+                <text font="LargeCountryBoldBig" priority="1" sublevel="5" />
+            </LBL>
+            <LBL level="1">
+                <text font="LargeCountryBoldLarge" priority="1" sublevel="0" />
+                <text font="LargeCountryBoldWatermark" priority="1" sublevel="1" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="MediumCountry" material="">
+            <LBL level="0">
+                <text font="MediumCountryBoldSmall" priority="1" sublevel="3" />
+                <text font="MediumCountryBoldMedium" priority="1" sublevel="4" />
+                <text font="MediumCountryBoldBig" priority="1" sublevel="5" />
+            </LBL>
+            <LBL level="1">
+                <text font="MediumCountryBoldLarge" priority="1" sublevel="0" />
+                <text font="MediumCountryBoldWatermark" priority="1" sublevel="1" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="StateAbbreviation" material="">
+            <LBL level="0">
+                <text font="StateAbbreviationBold" priority="2" sublevel="5" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="SmallCountry" material="">
+            <LBL level="1">
+                <text font="SmallCountryBoldSmall" priority="1" sublevel="0" />
+                <text font="SmallCountryBoldWatermark" priority="1" sublevel="1" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="SpecialArea" material="">
+            <LBL level="1">
+                <text font="SpecialAreaBoldSmall" priority="1" sublevel="0" />
+                <text font="SpecialAreaBoldWatermark" priority="1" sublevel="1" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="State" material="">
+            <LBL level="1">
+                <text font="StateBoldSmall" priority="1" sublevel="0" />
+                <text font="StateBoldMedium" priority="1" sublevel="1" />
+                <text font="StateWatermarkBold" priority="1" sublevel="2" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="NationalCapital" material="">
+            <LBL level="1">
+                <text font="CityRank1BoldTiny" priority="1" sublevel="0" />
+                <text font="CityRank1BoldSmall" priority="1" sublevel="1" />
+                <text font="CityRank1BoldMedium" priority="1" sublevel="2" />
+                <text font="CityRank1BoldBig" priority="1" sublevel="3" />
+                <text font="CityRank1BoldBig" priority="1" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="CityRank1BoldLarge" priority="1" sublevel="0" />
+                <text font="CityRank1WatermarkBoldTiny" priority="1" sublevel="1" />
+                <text font="CityRank1WatermarkBoldTiny" priority="1" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="CityRank1WatermarkBoldSmall" priority="1" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="Capital" material="">
+            <LBL level="1">
+                <text font="CityRank1BoldTiny" priority="1" sublevel="0" />
+                <text font="CityRank1BoldSmall" priority="1" sublevel="1" />
+                <text font="CityRank1BoldMedium" priority="1" sublevel="2" />
+                <text font="CityRank1BoldBig" priority="1" sublevel="3" />
+                <text font="CityRank1BoldBig" priority="1" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="CityRank1BoldLarge" priority="1" sublevel="0" />
+                <text font="CityRank1WatermarkBoldTiny" priority="1" sublevel="1" />
+                <text font="CityRank1WatermarkBoldTiny" priority="1" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="CityRank1WatermarkBoldSmall" priority="1" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="MajorCity" material="">
+            <LBL level="1">
+                <text font="CityRank1BoldTiny" priority="1" sublevel="0" />
+                <text font="CityRank1BoldSmall" priority="1" sublevel="1" />
+                <text font="CityRank1BoldMedium" priority="1" sublevel="2" />
+                <text font="CityRank1BoldBig" priority="1" sublevel="3" />
+                <text font="CityRank1BoldBig" priority="1" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="CityRank1BoldLarge" priority="1" sublevel="0" />
+                <text font="CityRank1WatermarkBoldTiny" priority="1" sublevel="1" />
+                <text font="CityRank1WatermarkBoldTiny" priority="1" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="CityRank1WatermarkBoldSmall" priority="1" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="City" material="">
+            <LBL level="1">
+                <text font="CityRank2Tiny" priority="2" sublevel="2" />
+                <text font="CityRank2BoldSmall" priority="2" sublevel="3" />
+                <text font="CityRank2BoldSmall" priority="2" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="CityRank2BoldMedium" priority="3" sublevel="0" />
+                <text font="CityRank2BoldBig" priority="3" sublevel="1" />
+                <text font="CityRank2BoldLarge" priority="3" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="CityRank2BoldHuge" priority="3" sublevel="0" />
+                <text font="CityRank2WatermarkBold" priority="3" sublevel="1" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="MinorCity" material="">
+            <LBL level="1">
+                <text font="CityRank3Tiny" priority="3" sublevel="3" />
+                <text font="CityRank3Small" priority="3" sublevel="4" />
+            </LBL>
+            <LBL level="2">
+                <text font="CityRank3Medium" priority="5" sublevel="0" />
+                <text font="CityRank3Big" priority="5" sublevel="1" />
+                <text font="CityRank3Large" priority="5" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="CityRank3BoldHuge" priority="5" sublevel="0" />
+                <text font="CityRank3BoldGiant" priority="5" sublevel="1" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="Town" material="">
+            <LBL level="2">
+                <text font="CityRank4Tiny" case="1" priority="7" sublevel="0" />
+                <text font="CityRank4Small" case="1" priority="7" sublevel="1" />
+                <text font="CityRank4Medium" case="1" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="CityRank4Big" case="1" priority="7" sublevel="0" />
+                <text font="CityRank4Large" case="1" priority="7" sublevel="1" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="Borough" material="">
+            <LBL level="2">
+                <text font="CityBoroughBoldSmall" case="1" priority="7" sublevel="0" />
+                <text font="CityBoroughBoldMedium" case="1" priority="7" sublevel="1" />
+                <text font="CityBoroughBoldWatermark" case="1" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="CityBoroughBoldWatermark" case="1" priority="7" sublevel="0" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="Neighborhood" material="">
+            <LBL level="2">
+                <text font="CityNeighborhoodSmall" case="1" priority="7" sublevel="1" />
+                <text font="CityNeighborhoodMedium" case="1" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="CityNeighborhoodBig" priority="7" sublevel="0" />
+                <text font="CityNeighborhoodBig" priority="7" sublevel="1" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="Hamlet" material="">
+            <LBL level="2">
+                <text font="CityHamlet" priority="7" sublevel="2" />
+            </LBL>
+            <LBL level="3">
+                <text font="CityHamlet" priority="7" sublevel="0" />
+                <text font="CityHamlet" priority="7" sublevel="1" />
+            </LBL>
+        </bind>
+        <bind type="Point" style="NamedPlace" usage="Other" material="">
+            <LBL level="3">
+                <text font="CityOther" priority="7" sublevel="1" />
+            </LBL>
+        </bind>
+    </library_binds>
+    <library_configs>
+        <building id="0" name="building-adjuestment-dat" reduction="0.3" constant="3" />
+        <building id="1" name="landmark-adjuestment-dat" reduction="0.7" constant="0" />
+        <DVA2Dbuilding id="2" name="enable-2d-building" value="0" />
+        <layerinfo id="3" name="RouteRankLayer" highscalerank1_3="1" lowscalerank1_3="3" highscalerank4="1" lowscalerank4="4" highscalerank5="1" lowscalerank5="5" />
+        <filterPointFactor id="4" name="FilterPointFactor" filterfactor="0.000001" filterfactor1="0.000001" />
+        <filterType id="5" name="FilterPointType" addrank="0" notskip="0" filtertype="1" filtertype1="2" />
+        <labeltileLPinfo id="6" name="lbltLP-info" wlstart="1" wlend="14" nlstart="4" nlend="14" rlstart="5" rlend="14" />
+        <labeltileGenLPinfo id="7" name="lbltLPGen-info" LBL0="6.0" LBL1="11.0" LBL2="14.0" LBL3="16.0" />
+        <B2DMaterialsAndFilter id="8" name="B2DMatAndFilter" MatComplex="area_building_any-mat-new" MatSimple="area_building_any-mat-simple" FilterValue="0" />
+        <Build2DbuildingConfig id="9" name="B2DBuildConfig" enableClip="0" enableComplexandSimple="1" />
+        <!-- rasterlabel id="8" name="enable-rasterlabel" value="1" /-->
+    </library_configs>
+    <library_filterarealakebyweight>
+        <areaweight id="0" name="LBL2.2" weight="6144000.00" />
+        <areaweight id="1" name="LBL2.3" weight="6144000.00" />
+        <areaweight id="2" name="LBL3.1" weight="1536000.00" />
+        <areaweight id="3" name="LBL3.2" weight="384000.00" />
+    </library_filterarealakebyweight>
+    <library_layers>
+        <layer id="0" name="LBL0.1" near="55930400" far="111860800" />
+        <layer id="1" name="LBL0.2" near="27965200" far="55930400" />
+        <layer id="2" name="LBL0.3" near="13982600" far="27965200" />
+        <layer id="3" name="LBL0.4" near="6991300" far="13982600" />
+        <layer id="4" name="LBL0.5" near="3495650" far="6991300" />
+        <layer id="5" name="LBL0.6" near="1747825" far="3495650" />
+        <layer id="6" name="LBL1.1" near="873912" far="1747825" />
+        <layer id="7" name="LBL1.2" near="436956" far="873912" />
+        <layer id="8" name="LBL1.3" near="218478" far="436956" />
+        <layer id="9" name="LBL1.4" near="109239" far="218478" />
+        <layer id="10" name="LBL1.5" near="54619" far="109239" />
+        <layer id="11" name="LBL2.1" near="27309" far="54619" />
+        <layer id="12" name="LBL2.2" near="13654" far="27309" />
+        <layer id="13" name="LBL2.3" near="6827" far="13654" />
+        <layer id="14" name="LBL3.1" near="3413" far="6827" />
+        <layer id="15" name="LBL3.2" near="1706" far="3413" />
+        <layer id="16" name="DVR.1" near="7790" far="15980" />
+        <layer id="17" name="DVR.2" near="3790" far="7790" />
+        <layer id="18" name="DVR.3" near="0" far="3790" />
+        <layer id="19" name="GVR.1" near="45200" far="56200" />
+        <layer id="20" name="GVR.2" near="612" far="45200" />
+        <layer id="21" name="GVR.3" near="0" far="612" />
+        <layer id="22" name="DVA" near="0" far="15980" />
+        <layer id="23" name="GVA" near="0" far="46200" />
+        <layer id="24" name="LM3D" near="0" far="3144" />
+        <layer id="25" name="B3D.1" near="0" far="3144" />
+        <layer id="26" name="B3D.2" near="0" far="2400" />
+        <layer id="27" name="BR0" near="111860800" far="447443200" />
+        <layer id="28" name="BR1" near="55930400" far="223721600" />
+        <layer id="29" name="BR2" near="27965200" far="111860800" />
+        <layer id="30" name="BR3" near="13982600" far="55930400" />
+        <layer id="31" name="BR4" near="6991300" far="27965200" />
+        <layer id="32" name="BR5" near="3495650" far="13982600" />
+        <layer id="33" name="BR6" near="1747825" far="6991300" />
+        <layer id="30" name="BR7" near="873912" far="3495650" />
+        <layer id="34" name="BR8" near="436956" far="1747825" />
+        <layer id="35" name="BR9" near="218478" far="873912" />
+        <layer id="36" name="BR10" near="109239" far="436956" />
+        <layer id="37" name="BR11" near="54619" far="218478" />
+        <layer id="38" name="BR12" near="27309" far="109239" />
+        <layer id="39" name="BR13" near="13654" far="54619" />
+        <layer id="40" name="BR14" near="6827" far="27309" />
+        <layer id="41" name="BR15" near="3413" far="13654" />
+        <layer id="42" name="WL" near="0" far="56200" />
+        <layer id="44" name="RL" near="0" far="46200" />
+        <layer id="45" name="B2D" near="0" far="15980" />
+        <layer id="46" name="DVA.1" near="853" far="1706" />
+        <layer id="47" name="DVA.2" near="427" far="853" />
+        <layer id="48" name="DVA.3" near="0" far="427" />		
+    </library_layers>
+	<library_offsets>
+		<offset material_type="base" offset_value="0" />
+		<offset material_type="poi" offset_value="1" />
+	</library_offsets>
+	<library_draworders>
+		<draworder draworder_type="point_label" draworder_offset_value="0"/>
+		<draworder draworder_type="road_label" draworder_offset_value="100"/>
+		<draworder draworder_type="poi" draworder_offset_value="200"/>
+		<draworder draworder_type="shield_label" draworder_offset_value="300"/>
+		<draworder draworder_type="shield" draworder_offset_value="400"/>
+		<draworder draworder_type="arrow" draworder_offset_value="3400"/>
+		<draworder draworder_type="poi_label" draworder_offset_value="3500"/>
+		<draworder draworder_type="landmark_label" draworder_offset_value="3600"/>
+		<draworder draworder_type="area_label" draworder_offset_value="3700"/>
+		<draworder draworder_type="3DB_label" draworder_offset_value="3800"/>
+	</library_draworders>
+</MATERIAL>

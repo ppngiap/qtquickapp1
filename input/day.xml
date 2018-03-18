@@ -8,14 +8,14 @@
         <color id="black-clr">000000ff</color>
         <color id="cole-clr">141414ff</color>
         <color id="white-clr">ffffffff</color>
-        <color id="blue-clr">0000ffff</color>
+        <color id="blue-clr">00ffffff</color>
         <color id="light_gray-clr">c8c8c8ff</color>
         <color id="medium_gray-clr">969696ff</color>
         <color id="dark_gray-clr">3f3f3fff</color>
-        <color id="yellow-clr">ffff00ff</color>
+        <color id="yellow-clr">ff0000ff</color>
         <color id="gold-clr">ffdc5cff</color>
         <color id="water_line_color-clr">a4cee9ff</color>
-        <color id="water_color-clr">008080ff</color>
+        <color id="water_color-clr">a4cee9ff</color>
         <color id="park_color-clr">cadfaaff</color>
         <color id="park_hole_color-clr">b7d285ff</color>
         <color id="campus_color-clr">B3B598ff</color>
@@ -87,7 +87,7 @@
         <color id="road_limited_access_tunnel-clr">f6cd6c7f</color>
         <color id="road_limited_access_outline-clr">e9a70aff</color>
         <!--Gareth adjusted alpha channel. Was 4c-->
-        <color id="road_local-clr">000808ff</color>
+        <color id="road_local-clr">ffffffff</color>
         <color id="road_local_tunnel-clr">ffffff7f</color>
         <color id="road_local_outline-clr">a8a8a8ff</color>
         <color id="road_ramp-clr">f6cd6cff</color>
@@ -116,7 +116,7 @@
         <color id="four-side-gradient-bottom-clr">f0f0f0ff</color>
         <color id="road_off-clr">ffffff00</color>
         <color id="black_text-clr">242826ff</color>
-        <color id="road_normal-clr">008080ff</color>
+        <color id="road_normal-clr">ffffffff</color>
         <color id="road_normal_tunnel-clr">ffffff7f</color>
         <color id="road_normal_outline-clr">a8a8a8ff</color>
         <color id="TollTextColor">000000ff</color>
