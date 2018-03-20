@@ -4,6 +4,8 @@
 #include <QtCore>
 #include <QtGui>
 
+#include "project.h"
+
 class MaterialListModel : public QAbstractListModel
 {
     Q_OBJECT
@@ -11,11 +13,7 @@ class MaterialListModel : public QAbstractListModel
 public:
     // Define the role names to be used
     enum RoleNames {
-        NameRole = Qt::UserRole,
-        HueRole = Qt::UserRole+2,
-        SaturationRole = Qt::UserRole+3,
-        BrightnessRole = Qt::UserRole+4,
-        RgbRole = Qt::UserRole+5
+        DataRole = Qt::UserRole
     };
 
     explicit MaterialListModel(QObject *parent = 0);
@@ -34,10 +32,8 @@ protected:
     // return the roles mapping to be used by QML
     virtual QHash<int, QByteArray> roleNames() const override;
 private:
-    QList<QColor> m_dataBasic;
-    QList<QColor> m_dataLight;
-    QList<QColor> m_dataDark;
-    QList<QColor> *m_data;
+    Project *m_project;
+    MaterialList *m_data;
     QHash<int, QByteArray> m_roleNames;
     QString m_theme; // one of {basic,light,dark}
 };

@@ -53,7 +53,8 @@ bool ColorTheme::read(const QString& fileName)
 
         Entry e;
         e.id = id;
-        e.color = QColor::fromRgba(rgba);
+        //e.color = QColor::fromRgba(rgba);
+        e.color = QColor((rgba & 0xFF000000) >> 24, (rgba & 0xFF0000) >> 16, (rgba & 0xFF00) >> 8, rgba & 0xFF);
 
         m_data.push_back(e);
 
@@ -73,7 +74,8 @@ ColorTheme::Entry *ColorTheme::get(int index)
 ColorTheme::Entry* ColorTheme::find(const QString &id)
 {
     ColorTheme::Entry *entry = NULL;
-    for (auto e : m_data) {
+    for (int i = 0; i < m_data.size(); i++ ) {
+        ColorTheme::Entry &e = m_data[i];
         if (e.id == id) {
             entry = &e;
             break;

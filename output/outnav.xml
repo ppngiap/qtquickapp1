@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <MATERIAL>
     <library_colors>
-        <color id="background-clr">e7e7dfff</color>
+        <color id="background-clr">008080ff</color>
         <color id="background_transp-clr">d4d5c2e9</color>
         <color id="bgraster_veil_color-clr">ffffff00</color>
         <color id="gray-clr">808080ff</color>
@@ -15,7 +15,7 @@
         <color id="yellow-clr">00ff22ff</color>
         <color id="gold-clr">ffdc5cff</color>
         <color id="water_line_color-clr">a4cee9ff</color>
-        <color id="water_color-clr">a4cee9ff</color>
+        <color id="water_color-clr">008080ff</color>
         <color id="park_color-clr">cadfaaff</color>
         <color id="park_hole_color-clr">b7d285ff</color>
         <color id="campus_color-clr">B3B598ff</color>
@@ -86,7 +86,7 @@
         <color id="road_limited_access_tunnel-clr">f6cd6c7f</color>
         <color id="road_limited_access_outline-clr">e9a70aff</color>
         <!--Gareth adjusted alpha channel. Was 4c-->
-        <color id="road_local-clr">ffffffff</color>
+        <color id="road_local-clr">000808ff</color>
         <color id="road_local_tunnel-clr">ffffff7f</color>
         <color id="road_local_outline-clr">a8a8a8ff</color>
         <color id="road_ramp-clr">f6cd6cff</color>
@@ -115,7 +115,7 @@
         <color id="four-side-gradient-bottom-clr">f0f0f0ff</color>
         <color id="road_off-clr">ffffff00</color>
         <color id="black_text-clr">242826ff</color>
-        <color id="road_normal-clr">ffffffff</color>
+        <color id="road_normal-clr">008080ff</color>
         <color id="road_normal_tunnel-clr">ffffff7f</color>
         <color id="road_normal_outline-clr">a8a8a8ff</color>
         <color id="TollTextColor">000000ff</color>
@@ -196,50 +196,8 @@
         <color id="poi_text_outline_landmark_color-clr">ffffffff</color>
         <color id="poi_text_bus_color-clr">218cd7ff</color>
         <color id="poi_text_outline_bus_color-clr">ffffffff</color>
+        <color id="poi_text_charging_color-clr">1f990bff</color>
+        <color id="poi_text_outline_charging_color-clr">ffffffff</color>
     </library_colors>
-    <library_images>
-        <!--image id="park_day-img">
-            <file>icons/park_tile.png</file>
-        </image>
-        <image id="terrain_park-img">
-            <file>stip-park.png</file>
-        </image>
-        <image id="terrain_geometry-img">
-            <file>stip-cemetery.png</file>
-        </image>
-        <image id="terrain_golf-img">
-            <file>stip-golf.png</file>
-        </image>
-        <image id="terrain_national_park-img">
-            <file>stip-natpark.png</file>
-        </image>
-        <image id="terrain_national_forest-img">
-            <file>stip-natforest.png</file>
-        </image>
-        <image id="terrain_cemetery-img">
-            <file>stip-cemetery.png</file>
-        </image>
-        <image id="area_building-img">
-            <file>area_building.PNG</file>
-        </image>
-        <image id="area_campus-img">
-            <file>area_campus.PNG</file>
-        </image>
-        <image id="area_geopolitical-img">
-            <file>area_geopolitical.PNG</file>
-        </image>
-        <image id="area_interior-img">
-            <file>area_interior.PNG</file>
-        </image>
-        <image id="area_park-img">
-            <file>area_park.PNG</file>
-        </image-->
-        <!--image id="area_water-img">
-            <file>icons/area_water.PNG</file>
-        </image-->
-        <!--add 20110728 end-->
-    </library_images>
-    <library_configs>
-        <BackgroundRasterConfig>karmadts_rast</BackgroundRasterConfig>
-    </library_configs>
+    <library_images/>
 </MATERIAL>

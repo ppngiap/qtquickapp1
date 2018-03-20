@@ -28,7 +28,7 @@ Item {
                 id: basicRadioButton
                 objectName: "basic"
                 text: qsTr("Basic")
-                //checked: true
+                checked: true
                 exclusiveGroup: themeGroup
             }
 

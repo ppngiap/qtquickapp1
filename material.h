@@ -6,14 +6,14 @@
 #include <QColor>
 #include <memory>
 
-class Material : QObject
+class Material : public QObject
 {
     Q_OBJECT
 
 public:
-    Q_PROPERTY(QString id READ id WRITE setId)
-    Q_PROPERTY(QString name READ name WRITE setName)
-    Q_PROPERTY(QColor color READ color WRITE setColor)
+    Q_PROPERTY(QString id READ id WRITE setId NOTIFY idChanged)
+    Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
+    Q_PROPERTY(QColor color READ color WRITE setColor NOTIFY colorChanged)
 
     QString id() const
     {
@@ -33,15 +33,25 @@ public slots:
     void setId(QString id)
     {
         m_id = id;
+        emit idChanged(id);
     }
     void setName(QString name)
     {
         m_name = name;
+        emit nameChanged(name);
     }
     void setColor(QColor color)
     {
         m_color = color;
+        emit colorChanged(color);
     }
+
+signals:
+    void idChanged(QString id);
+
+    void nameChanged(QString name);
+
+    void colorChanged(QColor color);
 
 private:
     QString m_id;

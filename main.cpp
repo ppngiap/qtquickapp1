@@ -26,7 +26,8 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QGuiApplication app(argc, argv);
 
-    qmlRegisterType<MaterialListModel>("com.comtechtel", 1, 0, "MaterialListModel");
+    qmlRegisterType<Material>("com.comtechtel.maptool", 1, 0, "Material");
+    qmlRegisterType<MaterialListModel>("com.comtechtel.maptool", 1, 0, "MaterialListModel");
 
     QQmlApplicationEngine engine;
     //engine.load(QUrl(QLatin1String("qrc:/main.qml")));

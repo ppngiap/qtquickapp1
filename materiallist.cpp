@@ -1,9 +1,13 @@
 #include "materiallist.h"
+#include <QDebug>
 
 MaterialList::MaterialList(ColorMap &cm, const QString& colorThemeFileName, const QString& outfile)
     : m_outfile(outfile), m_colorMap(cm)
 {
     bool ok = m_colorTheme.read(colorThemeFileName);
+    if (!ok) {
+        qWarning() << "Failed to parse " << colorThemeFileName;
+    }
     Q_ASSERT(ok);
 
     for (int i = 0; i < m_colorMap.count(); i++) {

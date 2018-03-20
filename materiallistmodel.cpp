@@ -2,22 +2,13 @@
 
 MaterialListModel::MaterialListModel(QObject *parent)
     : QAbstractListModel(parent)
+    , m_project(Project::instance())
+    , m_data(m_project->lightTheme())
     , m_theme("light")
 {
     // Set names to the role name hash container (QHash<int, QByteArray>)
     // model.name, model.hue, model.saturation, model.brightness
-    m_roleNames[NameRole] = "name";
-    m_roleNames[HueRole] = "hue";
-    m_roleNames[SaturationRole] = "saturation";
-    m_roleNames[BrightnessRole] = "brightness";
-    m_roleNames[RgbRole] = "rgb";
-
-    // Append the color names as QColor to the data list (QList<QColor>)
-    for(const QString& name : QColor::colorNames()) {
-        m_dataLight.append(QColor(name));
-    }
-
-    m_data = &m_dataLight;
+    m_roleNames[DataRole] = "data";
 }
 
 MaterialListModel::~MaterialListModel()
@@ -36,24 +27,11 @@ QVariant MaterialListModel::data(const QModelIndex &index, int role) const
     if(row < 0 || row >= m_data->count()) {
         return QVariant();
     }
-    const QColor& color = m_data->at(row);
-    //qDebug() << row << role << color;
     switch(role) {
-    case NameRole:
-        // return the color name as hex string (model.name)
-        return QColor::colorNames().at(row);
-    case HueRole:
-        // return the hue of the color (model.hue)
-        return color.hueF();
-    case SaturationRole:
-        // return the saturation of the color (model.saturation)
-        return color.saturationF();
-    case BrightnessRole:
-        // return the brightness of the color (model.brightness)
-        return color.lightnessF();
-    case RgbRole:
-        // return the color name as hex string (model.rgb)
-        return color.name();
+    case DataRole:
+        MaterialPtr material = m_data->get(row);
+        qWarning() << "(" << material->name() << ", " << material->color() << ", " << material->id() << ")";
+        return QVariant::fromValue<QObject *>(material.get());
     }
     return QVariant();
 }
@@ -77,11 +55,11 @@ void MaterialListModel::setTheme(QString theme)
 
     beginResetModel();
     if (theme == "light") {
-        m_data = &m_dataLight;
+        m_data = m_project->lightTheme();
     } else if (theme == "dark") {
-        m_data = &m_dataDark;
+        m_data = m_project->darkTheme();
     } else {
-        m_data = &m_dataBasic;
+        m_data = m_project->basicTheme();
     }
     m_theme = theme;
     endResetModel();

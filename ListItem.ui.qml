@@ -9,12 +9,15 @@ Item {
     property alias text: label.text
     property color fontColor: '#1f1f1f'
     property color boxColor: '#ffffff'
+
+    signal clicked()
+
     RowLayout {
         id: row
         spacing: 5
         Rectangle {
-            id : rect
-            width:  40
+            id: rect
+            width: 40
             height: 40
             color: root.boxColor
             border.color: Qt.darker(color, 1.2)
@@ -24,6 +27,10 @@ Item {
             font.pixelSize: 14
             color: root.fontColor
             text: "hello"
+        }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: root.clicked()
         }
     }
 }

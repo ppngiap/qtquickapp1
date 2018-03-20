@@ -3,7 +3,7 @@ import QtQuick.Controls 2.1
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 1.4
 
-import com.comtechtel 1.0
+import com.comtechtel.maptool 1.0
 
 ApplicationWindow {
     visible: true
@@ -12,7 +12,7 @@ ApplicationWindow {
     title: qsTr("Hello World")
 
     MaterialListModel {
-        id: model
+        id: materialListModel
         theme: mytheme.theme.current.objectName
     }
 
@@ -47,7 +47,7 @@ ApplicationWindow {
 
             // light is checked
             Component.onCompleted: {
-                var str = model.theme
+                var str = materalListModel.theme
                 if (str == "light") {
                     light.checked = true
                 } else if (str == "dark") {
@@ -64,14 +64,20 @@ ApplicationWindow {
         ListView {
             id: view
             width: parent.width
-            model: model
+            model: materialListModel
             spacing: 5
             clip: true
             delegate: ListItem {
-                text: model.name
-                boxColor: model.rgb
+                property Material material: model.data
+                text: material.name
+                boxColor: material.color
                 width: ListView.view.width
+
+                onClicked: {
+                    var material = model.data
+                }
             }
+
         }
         }
         RowLayout {

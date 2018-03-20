@@ -127,7 +127,7 @@
         <color id="ArterialHaloColor">ffffffff</color>
         <color id="LocalTextColor">333333ff</color>
         <color id="LocalHaloColor">ffffffff</color>
-		
+
 		<color id="poi_text_park_color-clr">385425ff</color>
 		<color id="poi_text_outline_park_color-clr">ffffffff</color>
         <color id="poi_text_library_color-clr">ad8d40ff</color>
@@ -204,8 +204,8 @@
         <!--image id="park_day-img">
             <file>icons/park_tile.png</file>
         </image>
-        <!--image id="terrain_park-img">
-            <file>stip-park.png</file>
+        <image id="terrain_park-img">
+            <file>stip-park.png</f>
         </image>
         <image id="terrain_geometry-img">
             <file>stip-cemetery.png</file>
@@ -243,6 +243,6 @@
         <!--add 20110728 end-->
     </library_images>
 	<library_configs>
-		<BackgroundRasterConfig>karmadts_rast</BackgroundRasterConfig>	
+		<BackgroundRasterConfig>karmadts_rast</BackgroundRasterConfig>
 	</library_configs>
 </MATERIAL>

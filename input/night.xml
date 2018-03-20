@@ -102,7 +102,7 @@
         <color id="road_ferry_outline-clr">414141ff</color>
         <!--add 20110728 end-->
         <color id="road_walkway-clr">606060ff</color>
-        <color id="road_walkway_tunnel-clr">6060607f</color> 
+        <color id="road_walkway_tunnel-clr">6060607f</color>
         <color id="road_notdrivable-clr">606060ff</color>
         <color id="road_notdrivable_tunnel-clr">6060607f</color>
         <!--Gareth added walkway color 20110203-->
@@ -127,7 +127,7 @@
         <color id="ArterialHaloColor">333333ff</color>
         <color id="LocalTextColor">ffffffff</color>
         <color id="LocalHaloColor">333333ff</color>
-		
+
 		<color id="poi_text_park_color-clr">ffffffff</color>
 		<color id="poi_text_outline_park_color-clr">575757ff</color>
         <color id="poi_text_library_color-clr">ffffffff</color>
@@ -198,13 +198,13 @@
 		<color id="poi_text_outline_landmark_color-clr">575757ff</color>
         <color id="poi_text_bus_color-clr">ffffffff</color>
 		<color id="poi_text_outline_bus_color-clr">575757ff</color>
-		
+
     </library_colors>
     <library_images>
         <!--image id="park_night-img">
             <file>icons/park_tile_night.png</file>
         </image>
-        <!--image id="terrain_park-img">
+        <image id="terrain_park-img">
             <file>stip-park.png</file>
         </image>
         <image id="terrain_geometry-img">

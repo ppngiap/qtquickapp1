@@ -206,7 +206,7 @@
         <!--image id="park_day-img">
             <file>icons/park_tile.png</file>
         </image>
-        <!--image id="terrain_park-img">
+        <image id="terrain_park-img">
             <file>stip-park.png</file>
         </image>
         <image id="terrain_geometry-img">
