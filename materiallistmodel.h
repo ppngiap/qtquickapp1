@@ -13,7 +13,7 @@ class MaterialListModel : public QAbstractListModel
 public:
     // Define the role names to be used
     enum RoleNames {
-        DataRole = Qt::UserRole
+        MaterialRole = Qt::UserRole
     };
 
     explicit MaterialListModel(QObject *parent = 0);

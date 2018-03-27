@@ -7,8 +7,7 @@ MaterialListModel::MaterialListModel(QObject *parent)
     , m_theme("light")
 {
     // Set names to the role name hash container (QHash<int, QByteArray>)
-    // model.name, model.hue, model.saturation, model.brightness
-    m_roleNames[DataRole] = "data";
+    m_roleNames[MaterialRole] = "material";
 }
 
 MaterialListModel::~MaterialListModel()
@@ -28,7 +27,7 @@ QVariant MaterialListModel::data(const QModelIndex &index, int role) const
         return QVariant();
     }
     switch(role) {
-    case DataRole:
+    case MaterialRole:
         MaterialPtr material = m_data->get(row);
         qWarning() << "(" << material->name() << ", " << material->color() << ", " << material->id() << ")";
         return QVariant::fromValue<QObject *>(material.get());

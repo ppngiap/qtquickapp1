@@ -2,6 +2,7 @@ import QtQuick 2.6
 import QtQuick.Controls 2.1
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 1.4
+import QtQuick.Dialogs 1.2
 
 import com.comtechtel.maptool 1.0
 
@@ -16,87 +17,126 @@ ApplicationWindow {
         theme: mytheme.theme.current.objectName
     }
 
-    ColumnLayout {
+        ColorDialog {
+        id: colorDialog
+        onAccepted: {
+            var model = listview.model
+            var index = listview.currentIndex
+            var item = listview.currentItem
+            var data = item.material
+            console.log(data)
+            console.log(item)
+            console.log(listview.model)
+            console.log(listview.currentIndex)
+            data.color = currentColor
+        }
+        }
+    SplitView {
+        id: splitview
+        anchors.fill: parent
+        orientation: Qt.Horizontal
 
-        height: parent.height
-        spacing: 20
+        Item {
+            height: parent.height
+            width: leftpane.width
 
-        ThemeSelector {
-            id: mytheme
+            ColumnLayout {
+                id: leftpane
+                height: parent.height
+                spacing: 20
 
-            basic.onClicked: {
-                console.log("basic.onClicked")
-                console.log(theme.current)
-                console.log("objectName: " + theme.current.objectName)
-                console.log("text: " + theme.current.text)
-            }
+                ThemeSelector {
+                    id: mytheme
 
-            light.onClicked: {
-                console.log("light.onClicked")
-                console.log(theme.current)
-                console.log("objectName: " + theme.current.objectName)
-                console.log("text: " + theme.current.text)
-            }
+                    basic.onClicked: {
+                        console.log("basic.onClicked")
+                        console.log(theme.current)
+                        console.log("objectName: " + theme.current.objectName)
+                        console.log("text: " + theme.current.text)
+                    }
 
-            dark.onClicked: {
-                console.log("dark.onClicked")
-                console.log(theme.current)
-                console.log("objectName: " + theme.current.objectName)
-                console.log("text: " + theme.current.text)
-            }
+                    light.onClicked: {
+                        console.log("light.onClicked")
+                        console.log(theme.current)
+                        console.log("objectName: " + theme.current.objectName)
+                        console.log("text: " + theme.current.text)
+                    }
 
-            // light is checked
-            Component.onCompleted: {
-                var str = materalListModel.theme
-                if (str == "light") {
-                    light.checked = true
-                } else if (str == "dark") {
-                    dark.checked = true
-                }  else {
-                    basic.checked = true
+                    dark.onClicked: {
+                        console.log("dark.onClicked")
+                        console.log(theme.current)
+                        console.log("objectName: " + theme.current.objectName)
+                        console.log("text: " + theme.current.text)
+                    }
+
+                    // light is checked
+                    Component.onCompleted: {
+                        var str = materalListModel.theme
+                        if (str == "light") {
+                            light.checked = true
+                        } else if (str == "dark") {
+                            dark.checked = true
+                        } else {
+                            basic.checked = true
+                        }
+                    }
+                }
+                ScrollView {
+                    anchors.top: mytheme.bottom
+                    anchors.bottom: cmdBar.top
+                    ListView {
+                        id: listview
+                        width: parent.width
+                        model: materialListModel
+                        spacing: 5
+                        clip: true
+                        delegate: ListItem {
+                            property Material material: model.material
+                            text: material.name
+                            boxColor: material.color
+                            width: ListView.view.width
+
+                            onClicked: {
+                                var material = model.material
+                                colorDialog.color = material.color
+                                colorDialog.open()
+                                listview.currentIndex = index
+                            }
+                        }
+                    }
+                }
+                RowLayout {
+                    id: cmdBar
+                    Layout.alignment: Qt.AlignBottom
+
+                    //anchors.bottom: splitview.bottom
+                    //anchors.horizontalCenter: parent.horizontalCenter
+                    Button {
+                        id: preview
+                        text: "Preview"
+                    }
+
+                    Button {
+                        id: save
+                        text: "Save"
+                        anchors.right: parent.right
+                        Layout.alignment: Qt.AlignRight
+                    }
                 }
             }
-
         }
-        ScrollView {
-            anchors.top : mytheme.bottom
-            anchors.bottom: cmdBar.top
-        ListView {
-            id: view
-            width: parent.width
-            model: materialListModel
-            spacing: 5
-            clip: true
-            delegate: ListItem {
-                property Material material: model.data
-                text: material.name
-                boxColor: material.color
-                width: ListView.view.width
 
-                onClicked: {
-                    var material = model.data
-                }
-            }
-
-        }
-        }
-        RowLayout {
-            id : cmdBar
-            anchors.bottom: parent.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            Label {
-                text: "Object Name"
-            }
-
-            TextField {
-                text: mytheme.theme.current.text
+        // dark will not be checked because light is checked
+        // in ThemeSelector.  Why???
+        //    Component.onCompleted: {
+        //        mytheme.dark.checked = true
+        //   }
+        Item {
+            Rectangle {
+                anchors.fill: parent
+                color: "lightsteelblue"
+                border.color: "slategrey"
             }
         }
     }
-
-    // dark will not be checked because light is checked
-    // in ThemeSelector.  Why???
-    //    Component.onCompleted: {
-    //        mytheme.dark.checked = true
-    //   }
 }
