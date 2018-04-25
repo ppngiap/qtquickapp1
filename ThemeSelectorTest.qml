@@ -14,10 +14,14 @@ ApplicationWindow {
 
     MaterialListModel {
         id: materialListModel
-        theme: mytheme.theme.current.objectName
+        //theme: mytheme.theme.current.objectName
     }
 
-        ColorDialog {
+    FontSizeModel {
+        id: fontSizeModel
+    }
+
+    ColorDialog {
         id: colorDialog
         onAccepted: {
             var model = listview.model
@@ -30,7 +34,7 @@ ApplicationWindow {
             console.log(listview.currentIndex)
             data.color = currentColor
         }
-        }
+    }
     SplitView {
         id: splitview
         anchors.fill: parent
@@ -38,69 +42,132 @@ ApplicationWindow {
 
         Item {
             height: parent.height
-            width: leftpane.width
-
+            width: 300
             ColumnLayout {
-                id: leftpane
-                height: parent.height
-                spacing: 20
+                anchors.fill: parent
+                TabView {
 
-                ThemeSelector {
-                    id: mytheme
+                    height: parent.height - cmdBar.height
+                    //anchors.fill: parent
+                    anchors.top: parent.top
+                    anchors.bottom: cmdBar.top
+                    anchors.margins: 12
+                    Tab {
+                        title: "Color Theme"
 
-                    basic.onClicked: {
-                        console.log("basic.onClicked")
-                        console.log(theme.current)
-                        console.log("objectName: " + theme.current.objectName)
-                        console.log("text: " + theme.current.text)
-                    }
+                        ColumnLayout {
+                            id: leftpane
+                            height: parent.height
+                            spacing: 20
 
-                    light.onClicked: {
-                        console.log("light.onClicked")
-                        console.log(theme.current)
-                        console.log("objectName: " + theme.current.objectName)
-                        console.log("text: " + theme.current.text)
-                    }
+                            ThemeSelector {
+                                id: mytheme
 
-                    dark.onClicked: {
-                        console.log("dark.onClicked")
-                        console.log(theme.current)
-                        console.log("objectName: " + theme.current.objectName)
-                        console.log("text: " + theme.current.text)
-                    }
+                                basic.onClicked: {
+                                    console.log("basic.onClicked")
+                                    console.log(theme.current)
+                                    console.log("objectName: " + theme.current.objectName)
+                                    console.log("text: " + theme.current.text)
+                                }
 
-                    // light is checked
-                    Component.onCompleted: {
-                        var str = materalListModel.theme
-                        if (str == "light") {
-                            light.checked = true
-                        } else if (str == "dark") {
-                            dark.checked = true
-                        } else {
-                            basic.checked = true
+                                light.onClicked: {
+                                    console.log("light.onClicked")
+                                    console.log(theme.current)
+                                    console.log("objectName: " + theme.current.objectName)
+                                    console.log("text: " + theme.current.text)
+                                    materialListModel.theme = theme.current.text
+                                }
+
+                                dark.onClicked: {
+                                    console.log("dark.onClicked")
+                                    console.log(theme.current)
+                                    console.log("objectName: " + theme.current.objectName)
+                                    console.log("text: " + theme.current.text)
+                                    materialListModel.theme = theme.current.text
+                                }
+
+                                // light is checked
+                                Component.onCompleted: {
+                                    var str = materialListModel.theme
+                                    if (str == "light") {
+                                        light.checked = true
+                                    } else if (str == "dark") {
+                                        dark.checked = true
+                                    } else {
+                                        basic.checked = true
+                                    }
+                                }
+                            }
+                            ScrollView {
+                                anchors.top: mytheme.bottom
+                                anchors.bottom: parent.bottom
+                                ListView {
+                                    id: listview
+                                    width: parent.width
+                                    model: materialListModel
+                                    spacing: 5
+                                    clip: true
+                                    delegate: ListItem {
+                                        property Material material: model.material
+                                        text: material.name
+                                        boxColor: material.color
+                                        width: ListView.view.width
+
+                                        onClicked: {
+                                            var material = model.material
+                                            colorDialog.color = material.color
+                                            colorDialog.open()
+                                            listview.currentIndex = index
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
-                }
-                ScrollView {
-                    anchors.top: mytheme.bottom
-                    anchors.bottom: cmdBar.top
-                    ListView {
-                        id: listview
-                        width: parent.width
-                        model: materialListModel
-                        spacing: 5
-                        clip: true
-                        delegate: ListItem {
-                            property Material material: model.material
-                            text: material.name
-                            boxColor: material.color
-                            width: ListView.view.width
-
-                            onClicked: {
-                                var material = model.material
-                                colorDialog.color = material.color
-                                colorDialog.open()
-                                listview.currentIndex = index
+                    Tab {
+                        title: "Font Size"
+                        Item {
+                            //anchors.fill: parent
+                            anchors.topMargin: 10
+                            RowLayout {
+                                anchors.fill: parent
+                                Layout.alignment: Qt.AlignLeft
+                                spacing: 10
+                                Label {
+                                    //anchors.leftMargin: 20
+                                    anchors.right: fontsize.left
+                                    text: "Road"
+                                    font.pixelSize: 22
+                                }
+                                ComboBox {
+                                    id: fontsize
+                                    anchors.horizontalCenter: parent.horizontalCenter
+                                    Layout.leftMargin: 20
+                                    //anchors.leftMargin: 20
+                                    model: [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
+                                    editable: true
+                                    //currentText: "3"
+                                    currentIndex: 6
+                                    validator: IntValidator {
+                                        top: 5
+                                        bottom: -5
+                                    }
+                                    Component.onCompleted: {
+                                        var txt = fontSizeModel.increment
+                                        console.log("fontsize.increment : " + txt)
+                                        var i = fontsize.find(txt)
+                                        if (i !== -1) {
+                                            fontsize.currentIndex = i
+                                        }
+                                    }
+                                    onActivated: {
+                                        console.log("Combobox::onActivated(" + index + ")")
+                                        console.log("ComboBox::onActivated text = "
+                                                    + fontsize.textAt(index))
+                                        fontSizeModel.increment = fontsize.textAt(
+                                                    index)
+                                    }
+                                }
                             }
                         }
                     }

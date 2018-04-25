@@ -1,5 +1,7 @@
 #include "materiallistmodel.h"
 
+//#define DXML
+
 MaterialListModel::MaterialListModel(QObject *parent)
     : QAbstractListModel(parent)
     , m_project(Project::instance())
@@ -29,7 +31,9 @@ QVariant MaterialListModel::data(const QModelIndex &index, int role) const
     switch(role) {
     case MaterialRole:
         MaterialPtr material = m_data->get(row);
+#ifdef DXML
         qWarning() << "(" << material->name() << ", " << material->color() << ", " << material->id() << ")";
+#endif
         return QVariant::fromValue<QObject *>(material.get());
     }
     return QVariant();

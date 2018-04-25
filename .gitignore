@@ -2,3 +2,5 @@
 *.qmlc
 
 *.user
+
+*.autosave

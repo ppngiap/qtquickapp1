@@ -4,6 +4,8 @@
 #include <QTextStream>
 #include <QtGlobal>
 
+//#define DXML
+
 ColorTheme::ColorTheme()
 {
 
@@ -57,8 +59,9 @@ bool ColorTheme::read(const QString& fileName)
         e.color = QColor((rgba & 0xFF000000) >> 24, (rgba & 0xFF0000) >> 16, (rgba & 0xFF00) >> 8, rgba & 0xFF);
 
         m_data.push_back(e);
-
+#ifdef DXML
         qDebug() << "id = " << id << ", val = " << s;
+#endif
         child = child.nextSiblingElement("color");
     }
 
@@ -74,7 +77,7 @@ ColorTheme::Entry *ColorTheme::get(int index)
 ColorTheme::Entry* ColorTheme::find(const QString &id)
 {
     ColorTheme::Entry *entry = NULL;
-    for (int i = 0; i < m_data.size(); i++ ) {
+    for (size_t i = 0; i < m_data.size(); i++ ) {
         ColorTheme::Entry &e = m_data[i];
         if (e.id == id) {
             entry = &e;
@@ -112,7 +115,9 @@ void ColorTheme::print()
     if (colors.isNull()) return;
     QDomElement child = colors.firstChildElement("color");
     while (!child.isNull()) {
+#ifdef DXML
         qDebug() << "id = " << child.attribute("id") << ", val = " << child.text();
+#endif
         child = child.nextSiblingElement("color");
     }
 }
@@ -143,7 +148,9 @@ void ColorTheme::find(const QString& id, QDomElement& de)
     if (colors.isNull()) return;
     QDomElement child = colors.firstChildElement("color");
     while (!child.isNull()) {
+#ifdef DXML
         qDebug() << "id = " << child.attribute("id") << ", val = " << child.text();
+#endif
         if (child.attribute("id") ==  id) {
             de = child;
             return;

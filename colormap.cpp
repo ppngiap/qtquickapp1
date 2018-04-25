@@ -4,6 +4,8 @@
 #include <QTextStream>
 #include <QtGlobal>
 
+//#define DXML
+
 ColorMap::ColorMap()
 {
 
@@ -82,7 +84,9 @@ bool ColorMap::write(const QString& fileName)
 void ColorMap::print()
 {
     for (auto e : m_data) {
+#ifdef DXML
         qDebug() << "id = " << e.id << ", txt = " << e.txt;
+#endif
     }
 }
 

@@ -3,6 +3,7 @@
 #include "colortheme.h"
 #include "colormap.h"
 #include "materiallistmodel.h"
+#include "fontsizemodel.h"
 
 
 void testColorTheme()
@@ -28,6 +29,7 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<Material>("com.comtechtel.maptool", 1, 0, "Material");
     qmlRegisterType<MaterialListModel>("com.comtechtel.maptool", 1, 0, "MaterialListModel");
+    qmlRegisterType<FontSizeModel>("com.comtechtel.maptool", 1, 0, "FontSizeModel");
 
     QQmlApplicationEngine engine;
     //engine.load(QUrl(QLatin1String("qrc:/main.qml")));
